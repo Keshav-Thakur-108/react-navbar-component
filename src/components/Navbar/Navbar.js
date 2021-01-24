@@ -1,8 +1,17 @@
 import React from 'react'
+import {Nav, NavbarContainer, NavLogo, NavIcon} from './Navbar.elements'
+
 
 const Navbar = () => {
     return (
-        <div>Hello</div>
+        <Nav>
+            <NavbarContainer>
+                <NavLogo to='/'>
+                    <NavIcon/>
+                    SAIL
+                </NavLogo>
+            </NavbarContainer>
+        </Nav>
     )
 }
 
