@@ -19,7 +19,10 @@ justify-content: space-between;
 align-items: center;
 padding-left: 50px;
 padding-right: 50px;
-color: white
+color: white;
+max-width:1300px;
+margin-right:auto;
+margin-left:auto;
 `
 
 export const NavLogo = styled(Link)`
@@ -47,5 +50,27 @@ display: none;
     justify-content:center;
     font-size: 1.8rem;
     cursor: pointer
+}
+`
+
+export const NavMenu = styled.ul`
+display:flex;
+align-items: center;
+text-align:center;
+list-style:none;
+
+
+@media screen and (max-width:960px)
+{
+    position: absolute;
+    top: 80px;
+    left:${({click}) => (click ? 0 : '-100%')};
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color:#2f2626; 
+    transition: all 0.5 ease
+
 }
 `
