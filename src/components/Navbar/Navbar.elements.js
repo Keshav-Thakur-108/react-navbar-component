@@ -34,3 +34,18 @@ align-items: center
 export const NavIcon = styled(GiAbstract042)`
 margin-right: 0.5rem
 `
+
+export const MobileIcon = styled.div`
+display: none;
+
+@media screen and (max-width: 960px)
+{
+    color: white;
+    justify-self: flex-end;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 1.8rem;
+    cursor: pointer
+}
+`
