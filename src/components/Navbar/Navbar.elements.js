@@ -74,3 +74,46 @@ list-style:none;
 
 }
 `
+
+export const NavItem = styled.li`
+height: 80px;
+border: 2px solid transparent;
+padding: 0.5rem 1rem;
+
+&:hover
+{
+    border-bottom: 2px solid #4b59f7;
+}
+
+@media screen and (max-width: 960px)
+{
+    width:100%;
+    &:hover
+    {
+        border: none;
+    }
+}
+
+`
+
+export const NavItemLink = styled(Link)`
+color: white;
+display:flex;
+flex-direction: row;
+align-items: center;
+text-decoration: none;
+height:100%;
+
+@media screen and (max-width: 960px)
+{
+    width:100%;
+    padding: 2rem;
+    text-align:center;
+    display: table;
+    &:hover
+    {
+        color: #4b59f7;
+        transition: all 0.3 ease
+    }
+}
+`
