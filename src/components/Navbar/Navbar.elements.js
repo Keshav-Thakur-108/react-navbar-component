@@ -117,3 +117,43 @@ height:100%;
     }
 }
 `
+
+export const Button = styled.button`
+border-radius: 4px;
+background: ${({primary}) =>(primary ? '#49A657' : '#0467fb')};
+padding: ${({big}) => (big ? '12px 64px' : '10px 20px')};
+font-size: ${({bigFont}) => (bigFont ? '20px' : '16px')};
+outline: none;
+border: none;
+cursor: pointer;
+color: white;
+
+&:hover
+{
+    transition: all 0.3 ease;
+    background: white;
+    background: ${({primary}) => (primary ? '#0467fb' : '#4b59f7')};
+}
+`
+
+export const NavItemBtn = styled.li`
+@media screen and (max-width: 960px)
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    height: 120px;
+}
+`
+export const NavBtnLink = styled(Link)`
+display: flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+padding: 8px 16px;
+height: 100%;
+width: 100%;
+border:none;
+outline: none;
+`
